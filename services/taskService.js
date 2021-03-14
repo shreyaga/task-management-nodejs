@@ -1,5 +1,5 @@
 const taskList = require('../data/sample.json');
-const TaskError = require('../errors/TaskError');
+const TaskError = require('../error/TaskError');
 const date = require('../utils/date');
 
 const find = (id) => {
