@@ -3,27 +3,30 @@
         "id": "1",
         "name": "Add search option",
         "description": "Add search funtionality to the produt listing",
-        "owner": "john",
+        "owner": "john.smith@xyz.com",
         "assignee": "carl",
         "status": "open",
-        "dueDate": "20-03-2021"
+        "dueDate": "1616198400000",
+        "createdDate": "1614816000000"
     },
     {
         "id": "2",
         "name": "Provide hint for error",
         "description": "Provide user readable error information",
-        "owner": "john",
+        "owner": "john.smith@xyz.com",
         "assignee": "seville",
         "status": "open",
-        "dueDate": "18-03-2021"
+        "dueDate": "1616025600000",
+        "createdDate": "1614816000000"
     },
     {
         "id": "3",
         "name": "Test api endpoint",
         "description": "Test the newly added api endpoint post integration",
-        "owner": "kelly",
+        "owner": "kelly.jones@xyz.com",
         "assignee": "chris",
         "status": "open",
-        "dueDate": "04-03-2021"
+        "dueDate": "1615161600000",
+        "createdDate": "1614816000000"
     }
 ]
