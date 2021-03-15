@@ -11,7 +11,7 @@ app.use(bodyParser.json());
 app.use(routes);
 
 app.all("*", (req, res) => { 
-    res.send(http.response.badRequest(res, 'Page not found for the request')); 
+    res.send(http.response.badRequest(res, 'Route not found for the request')); 
 }); 
 
 app.listen(config.port, ()=>{
