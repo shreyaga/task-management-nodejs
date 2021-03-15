@@ -6,6 +6,6 @@ const crossedDueDate= (dueDate) => {
     }else{
         return false;
     }   
-}
+};
 
 module.exports = { crossedDueDate };

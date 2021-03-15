@@ -7,7 +7,7 @@ const find = (id) => {
     if(taskDetails){
         return taskDetails;
     }
-    throw new TaskError('notFound', 'Task with provided id does not exist')
+    throw new TaskError('notFound', 'Task with provided id does not exist');
 };
 
 const remove = (id) => {
@@ -17,7 +17,7 @@ const remove = (id) => {
         return taskList;
     }
     
-    throw new TaskError('notFound', 'Task with provided id does not exist')
+    throw new TaskError('notFound', 'Task with provided id does not exist');
    
 };
 
@@ -27,7 +27,7 @@ const update = (id, status) => {
         taskDetails.status = status;
         return taskDetails;
     }
-    throw new TaskError('internalServerError','Due date has already passed')
+    throw new TaskError('internalServerError','Due date has already passed');
     
 };
 
