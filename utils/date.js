@@ -1,5 +1,3 @@
-
-
 const crossedDueDate= (dueDate) => {
     let currentDate = new Date().getTime();
     const diffDays = Math.ceil((dueDate - currentDate) / (1000 * 3600 * 24)); 
@@ -10,4 +8,4 @@ const crossedDueDate= (dueDate) => {
     }   
 }
 
-module.exports = { crossedDueDate}
+module.exports = { crossedDueDate };

@@ -17,24 +17,24 @@ const taskSchema = {
     owner: {
         in : ['body'],
         notEmpty: true,
-        errorMessage: 'name field cannot be empty'
+        errorMessage: 'owner field cannot be empty'
     },
     assignee: {
         in : ['body'],
         notEmpty: true,
-        errorMessage: 'name field cannot be empty'
+        errorMessage: 'assignee field cannot be empty'
     },
     status: {
         in : ['body'],
         notEmpty: true,
-        errorMessage: 'name field cannot be empty'
+        errorMessage: 'body field cannot be empty'
     },
     dueDate: {
         in : ['body'],
         notEmpty: true,
-        errorMessage: 'name field cannot be empty'
+        errorMessage: 'dueDate field cannot be empty'
     }
 
-}
+};
 
-module.exports = taskSchema
+module.exports = taskSchema;
