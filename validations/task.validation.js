@@ -1,4 +1,4 @@
-const { param, checkSchema } = require('express-validator');
+const { param, checkSchema, body } = require('express-validator');
 const taskSchema = require('./schema.validation');
 
 exports.validate = (method) => {
@@ -20,7 +20,7 @@ exports.validate = (method) => {
     case 'updateTask':{
         return[
             param('id').exists(),
-            param('status').exists()
+            body('status').exists()
         ];
     }
   }

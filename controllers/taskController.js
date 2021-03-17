@@ -29,7 +29,7 @@ const updateTaskById = (req,res) => {
     if(error)
         return http.response.badRequest(res, error);
     try{
-        return http.response.ok(res,taskService.update(req.params.id, req.params.status));
+        return http.response.ok(res,taskService.update(req.params.id, req.body.status));
     }catch(err){
         return http.response[err.statusType](res);
     }

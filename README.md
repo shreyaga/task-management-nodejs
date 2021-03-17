@@ -7,7 +7,7 @@ Task management tool to keep track of tasks. Each task is assigned with a due da
 
 1. GET (/api/task/:id) - Retrieves the task details based on task id
 2. POST (/api/task) - Creates a new task
-3. PUT (/api/task/:id/:status) - Updates the task status based on id
+3. PUT (/api/task/:id) - Updates the task status based on id
 4. DELETE (/api/task/:id) - Deletes the task based on id
 
 

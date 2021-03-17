@@ -47,14 +47,16 @@ describe('Test API Routes', function() {
       });
     });
     
-    describe('PUT /task/:id/:status', function() {
+    describe('PATCH /task/:id/:status', function() {
       it('updates a task', function(done) {
-        const task = {"id":"2","status":"complete"};
-        chai.request(server).put('/api/task/'+ task.id + '/' + task.status).end((err,resp)=>{
+        const taskId = "1";
+        const task = {"status":"complete"};
+        chai.request(server).patch('/api/task/'+ taskId).send(task).end((err,resp)=>{
           resp.should.have.status(200);
           resp.body.should.have.property('data');
           resp.body.data.should.be.a('object');
-          resp.body.data.should.have.property('id').eq(task.id);
+          resp.body.data.should.have.property('id').eq(taskId);
+          resp.body.data.should.have.property('status').eq(task.status);
           done();
         });
       });
