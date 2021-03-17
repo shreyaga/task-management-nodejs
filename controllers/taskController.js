@@ -9,7 +9,7 @@ const getTaskById = (req,res)=>{
     try {
         return http.response.ok(res, taskService.find(req.params.id));
     }catch(err){
-        return http.response[err.statusType](res);
+        return http.response[err.statusType](res, err.message);
     }
 };
 
@@ -20,7 +20,7 @@ const deleteTaskById = (req,res) => {
     try{
         return http.response.ok(res, taskService.remove(req.params.id));
     }catch(err){
-        return http.response[err.statusType](res);
+        return http.response[err.statusType](res, err.message);
     }
 };
 
@@ -31,7 +31,7 @@ const updateTaskById = (req,res) => {
     try{
         return http.response.ok(res,taskService.update(req.params.id, req.body.status));
     }catch(err){
-        return http.response[err.statusType](res);
+        return http.response[err.statusType](res, err.message);
     }
 };
 
@@ -42,7 +42,7 @@ const createTask = (req,res) => {
     try{
         return http.response.created(res, taskService.create(req.body));
     }catch(err){
-        return http.response[err.statusType](res);
+        return http.response[err.statusType](res, err.message);
     }
 };
 
